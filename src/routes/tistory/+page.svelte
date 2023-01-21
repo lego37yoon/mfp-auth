@@ -1,7 +1,7 @@
 <script>
     const tistory_client = import.meta.env.VITE_TISTORY_APP_KEY;
-    const redirect_url = import.meta.env.VITE_REDIRECT_URL;
-    const state = import.meta.env.VITE_STATE;
+    const redirect_url = import.meta.env.VITE_TISTORY_REDIRECT_URL;
+    const state = import.meta.env.VITE_TISTORY_STATE;
     const auth_link = `https://www.tistory.com/oauth/authorize?client_id=${tistory_client}&redirect_uri=${redirect_url}&response_type=code&state=${state}`
 
 </script>

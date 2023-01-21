@@ -1743,9 +1743,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mfp-tistory@workspace:.":
+"mfp-auth@workspace:.":
   version: 0.0.0-use.local
-  resolution: "mfp-tistory@workspace:."
+  resolution: "mfp-auth@workspace:."
   dependencies:
     "@material/mwc-icon-button-toggle": ^0.27.0
     "@sveltejs/adapter-auto": ^1.0.0
