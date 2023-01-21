@@ -1,5 +1,5 @@
 {
-	"name": "mfp-tistory",
+	"name": "mfp-auth",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -17,8 +17,10 @@
 		"eslint-plugin-svelte3": "^4.0.0",
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
-		"typescript": "^4.9.3",
 		"vite": "^4.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@material/mwc-icon-button-toggle": "^0.27.0"
+	}
 }
