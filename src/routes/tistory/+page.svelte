@@ -1,13 +1,21 @@
+<script>
+    const tistory_client = import.meta.env.VITE_TISTORY_APP_KEY;
+    const redirect_url = import.meta.env.VITE_REDIRECT_URL;
+    const state = import.meta.env.VITE_STATE;
+    const auth_link = `https://www.tistory.com/oauth/authorize?client_id=${tistory_client}&redirect_uri=${redirect_url}&response_type=code&state=${state}`
+
+</script>
+
 <svelte:head>
-    <title>인증하기 | 메아리 for 포트폴리오</title>
+    <title>티스토리 인증하기 | 메아리 for 포트폴리오</title>
 </svelte:head>
 
 <main>
-    <h1>종합 인증 페이지</h1>
-    <p>메아리 for 포트폴리오 사용 중 연동이 필요한 서비스 시용 시 이 페이지를 이용하세요.</p>
+    <h1><span class="tistory">TISTORY</span> 인증 페이지</h1>
+    <p>메아리 for 포트폴리오 사용 중 소식 란에 티스토리 블로그와 연동을 희망하시는 경우, 아래 버튼을 눌러 연동하실 수 있습니다.</p>
     <p>※ 본 웹 사이트는 정보를 수집하지 않으며 전달된 정보를 그대로 전달합니다.</p>
-    <section id="button-section">
-        <a href="./tistory"><button>티스토리 →</button></a>
+    <section id="auth-button-section">
+        <a href="{auth_link}"><button>인증하기 →</button></a>
     </section>
 </main>
 
@@ -35,7 +43,7 @@
         padding: 0.5em;
     }
 
-    #button-section {
+    #auth-button-section {
         display: flex;
         justify-content: center;
     }
