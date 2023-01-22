@@ -13,11 +13,13 @@
     <h1>소유 중인 <span class="tistory">TISTORY</span> 블로그 목록</h1>
     <p>현재 계정에 연결된 티스토리 블로그는 다음과 같습니다. 연결할 블로그를 선택해주시면 설정 가이드를 표시해드립니다.</p>
     <section id="select-blog-section">
-        <form id="select-blog" method="GET">
+        <form id="select-blog" method="POST" action="./result">
+            <input type="hidden" name="token" value="{data.token}">
+            <input type="hidden" name="state" value="{data.state}">
             {#each data.blogs as blog}
             <label>
                 <input type="radio" name="blog" value="{blog.name}">
-                <img src={blog.profileThumbnailImageUrl}>
+                <img src={blog.profileThumbnailImageUrl ? blog.profileThumbnailImageUrl : `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="16" y="30">${blog.title.slice(0, 1)}</text></svg>`} alt="{blog.title} profile thumbnail picture">
                 <p class="title">{blog.title}</p>
                 <p>
                     {blog.secondaryUrl === "" ? blog.url : blog.secondaryUrl} | 
@@ -25,7 +27,7 @@
                     {blog.default === "Y" ? "기본 블로그" : "블로그"} {blog.role} |
                     글 {blog.statistics.post}개 댓글 {blog.statistics.comment}개 방명록 {blog.statistics.guestbook}개
                 </p>
-            </label>                
+            </label>
             {/each}
             <button type="submit">확인 →</button>
         </form>

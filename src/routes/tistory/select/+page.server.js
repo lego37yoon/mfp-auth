@@ -21,7 +21,8 @@ export async function load({ url }) {
 
         return {
             token: `${response_array[1]}`,
-            blogs: convertDataJson.tistory.item.blogs
+            blogs: convertDataJson.tistory.item.blogs,
+            state: state
         };
     } else {
         throw error(400, `Unknown source. Source: ${url.searchParams.get("state")}`);
