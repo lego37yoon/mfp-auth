@@ -1,38 +1,20 @@
-# create-svelte
+# mfp-auth
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+`mfp-auth`는 종이상자의 개인 포트폴리오 사이트 프로젝트인 `maeari for portfolio` (약칭 `mfp`)의 블로그 연동 기능을 돕기 위해 제작한 프로젝트입니다.
 
-## Creating a project
+## 지원 예정 및 지원 서비스
 
-If you're seeing this, you've probably already done this step. Congrats!
+현재 아래 OAuth 인증 서비스를 지원하고 있습니다.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- [TISTORY](https://www.tistory.com/guide/api) - 블로그 글 목록 읽기 목적
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+향후 아래 서비스와의 연동을 지원할 예정입니다.
 
-## Developing
+- [Mastodon](https://www.joinmastodon.org) - Mastodon 인스턴스 툿 목록 읽기 목적
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 오픈소스 소프트웨어
 
-```bash
-npm run dev
+본 프로젝트 구현을 위해 아래 오픈소스 프로젝트를 이용 중입니다.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- [SvelteKit](https://kit.svelte.dev)
+- [Svelte](https://svelte.dev)
