@@ -6,7 +6,7 @@
 
 현재 아래 OAuth 인증 서비스를 지원하고 있습니다.
 
-- [TISTORY](https://www.tistory.com/guide/api) - 블로그 글 목록 읽기 목적
+- ~~[TISTORY](https://www.tistory.com/guide/api)~~ TISTORY API 서비스 종료로 사용하지 않을 예정입니다.
 
 향후 아래 서비스와의 연동을 지원할 예정입니다.
 
